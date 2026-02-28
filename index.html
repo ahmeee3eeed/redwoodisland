@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redwood Island - Premium Fruit Export</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="images/logo/favicon.png" />
+  </head>
+  <body>
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="contact-info">
+          <a href="tel:+966757557363"
+            ><i class="fas fa-phone"></i> +966-75-7557363</a
+          >
+          <a href="mailto:info@redwoodisland.com"
+            ><i class="fas fa-envelope"></i> info@redwoodisland.com</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Fixed Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <!-- Logo -->
+          <div class="logo">
+            <a href="index.html">
+              <img
+                src="images/logo/logobackgroundless.png"
+                alt="Redwood Island Logo"
+              />
+            </a>
+          </div>
+
+          <!-- Navigation -->
+          <nav class="nav" id="navMenu">
+            <ul class="nav-list">
+              <li>
+                <a
+                  href="index.html"
+                  class="active"
+                  data-en="Home"
+                  data-ar="الرئيسية"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="about.html" data-en="About Us" data-ar="من نحن"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="products.html"
+                  data-en="Our Products"
+                  data-ar="منتجاتنا"
+                  >Our Products</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" data-en="Contact Us" data-ar="اتصل بنا"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+
+            <!-- Translation Button (inside nav for mobile) -->
+            <button class="translate-btn" id="translateBtn">
+              <span class="lang-text">العربية</span>
+            </button>
+          </nav>
+
+          <!-- Hamburger Menu (Mobile) -->
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Slider / Carousel -->
+    <section class="hero-slider">
+      <div class="slider-container">
+        <div class="slide active">
+          <img src="images/hero-slider/slide1.jpg" alt="Bulk Supply" />
+          <div class="slide-content">
+            <h1>
+              Exotic fruit sourced directly from the pearl of the Indian Ocean
+            </h1>
+            <h2></h2>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="images/hero-slider/slide2.jpg" alt="Fresh Fruits" />
+          <div class="slide-content">
+            <h1>Fresh Fruits</h1>
+            <h2>Direct from Farms</h2>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="images/hero-slider/slide3.jpg" alt="Global Export" />
+          <div class="slide-content">
+            <h1>Global Imports</h1>
+            <h2>Delivering freshness across borders</h2>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="images/hero-slider/slide4.jpg" alt="Quality Assured" />
+          <div class="slide-content">
+            <h1>Quality Assured.</h1>
+            <h2>Every Single Time.</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider Controls -->
+      <button class="slider-btn prev" onclick="changeSlide(-1)">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="slider-btn next" onclick="changeSlide(1)">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+
+      <!-- Slider Indicators -->
+      <div class="slider-indicators">
+        <span class="indicator active" onclick="currentSlide(0)"></span>
+        <span class="indicator" onclick="currentSlide(1)"></span>
+        <span class="indicator" onclick="currentSlide(2)"></span>
+        <span class="indicator" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+
+    <!-- Company Brief Section -->
+    <section class="company-brief">
+      <div class="container">
+        <div class="brief-content">
+          <!--<div class="brief-image">
+            <img
+              src="images/about/company-image.jpg"
+              alt="Redwood Island Facility"
+            
+          </div>-->
+          <div class="brief-text">
+            <h2>Welcome To</h2>
+            <h1>Redwood Island</h1>
+            <h3>Trading Co. Ltd.</h3>
+            <p>
+              At Redwood Island Trading Co. Ltd, we take pride in delivering the
+              finest quality fresh fruits, vegetables, grains, pulses, and
+              spices across global markets. With a strong supply network, we
+              ensure that every product meets the highest standards of
+              freshness, quality, and sustainability.
+            </p>
+            <a href="about.html" class="btn-primary">Know More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Three Info Blocks Section -->
+    <section class="info-blocks">
+      <div class="container">
+        <div class="blocks-grid">
+          <div class="info-block block-green">
+            <h3>Streamlined Global Sourcing</h3>
+            <p>
+              At Redwood Island Trading Co. Ltd, we manage a fully integrated
+              supply chain from farm to table. Our operations cover sourcing,
+              storage, processing, packaging, and distribution, ensuring
+              complete transparency and efficiency at every stage. This
+              end-to-end approach allows us to deliver consistent quality and
+              reliability to our partners.
+            </p>
+          </div>
+          <div class="info-block block-yellow">
+            <h3>Uncompromised Quality</h3>
+            <p>
+              We are committed to delivering only the finest products to our
+              customers. All our fruits, vegetables, grains, pulses, and spices
+              are sourced from trusted global farms and undergo strict quality
+              control checks. From selection to shipment, we ensure every
+              product meets high standards of freshness, flavor, and nutritional
+              value.
+            </p>
+          </div>
+          <div class="info-block block-green">
+            <h3>Cost-Effective Sourcing</h3>
+            <p>
+              Thanks to strong supplier relationships and streamlined logistics,
+              we offer premium products at highly competitive prices. Our
+              efficient processes reduce costs without compromising on quality,
+              allowing us to meet the demands of wholesalers, retailers, and
+              food service providers with affordable, high-value solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--
+   
+    <section class="customers-section">
+      <div class="container">
+        <h2>Our Customers</h2>
+        <p class="section-subtitle">Trusted by leading brands worldwide</p>
+
+        <div class="customers-slider">
+          <button class="slider-btn prev" onclick="changeCustomer(-1)">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+
+          <div class="customers-track" id="customersTrack">
+            <div class="customer-logo">
+              <img src="images/customers/customer1.png" alt="Customer 1" />
+            </div>
+            <div class="customer-logo">
+              <img src="images/customers/customer2.png" alt="Customer 2" />
+            </div>
+            <div class="customer-logo">
+              <img src="images/customers/customer3.png" alt="Customer 3" />
+            </div>
+            <div class="customer-logo">
+              <img src="images/customers/customer4.png" alt="Customer 4" />
+            </div>
+            <div class="customer-logo">
+              <img src="images/customers/customer5.png" alt="Customer 5" />
+            </div>
+            <div class="customer-logo">
+              <img src="images/customers/customer6.png" alt="Customer 6" />
+            </div>
+          </div>
+
+          <button class="slider-btn next" onclick="changeCustomer(1)">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+-->
+    <!-- Products Showcase Section -->
+    <section class="products-showcase">
+      <div class="container">
+        <h2>Fresh Produce</h2>
+        <p class="section-subtitle">
+          Premium quality fruits delivered worldwide
+        </p>
+
+        <div class="products-slider">
+          <button class="slider-btn prev" onclick="changeProduct(-1)">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+
+          <div class="products-track" id="productsTrack">
+            <div class="product-card">
+              <img
+                src="images/products/papaya-fruit-isolated.jpg"
+                alt="Kiwifruit"
+              />
+              <h3>Papayas</h3>
+              <a href="products.html" class="btn-view">View More</a>
+            </div>
+            <div class="product-card">
+              <img src="images/products/avocadoes.jpeg" alt="Pears" />
+              <h3>Avocadoes</h3>
+              <a href="products.html" class="btn-view">View More</a>
+            </div>
+            <div class="product-card">
+              <img src="images/products/pineapple.jpeg" alt="Pineapples" />
+              <h3>Pineapples</h3>
+              <a href="products.html" class="btn-view">View More</a>
+            </div>
+            <div class="product-card">
+              <img src="images/products/soursop.jpeg" alt="Pomegranates" />
+              <h3>Soursop</h3>
+              <a href="products.html" class="btn-view">View More</a>
+            </div>
+            <div class="product-card">
+              <img src="images/products/mangoes.jpeg" alt="Oranges" />
+              <h3>TJC Mangoes</h3>
+              <a href="products.html" class="btn-view">View More</a>
+            </div>
+            <div class="product-card">
+              <img src="images/products/bananas.jpeg" alt="Apples" />
+              <h3>Anamalu Bananas</h3>
+              <a href="products.html" class="btn-view">View More</a>
+            </div>
+          </div>
+
+          <button class="slider-btn next" onclick="changeProduct(1)">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Quick Links -->
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="products.html">Our Products</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Company Info with Logo -->
+          <div class="footer-col footer-center">
+            <div class="footer-logo">
+              <img src="images/logo/logo-white.png" alt="Redwood Island" />
+            </div>
+            <p>
+              Redwood Island brings fresh, high-quality fruits and vegetables to
+              global markets. Committed to freshness, purity, and excellence in
+              every export.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="footer-col">
+            <h3>Contact Us</h3>
+            <p>Contact us for fresh deals and export details.</p>
+            <ul class="contact-list">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 141/D Mahabuthgamuwa,
+                Mulleriawa, New Town
+              </li>
+              <li><i class="fas fa-phone"></i> +966-75-7557363</li>
+              <li><i class="fas fa-envelope"></i> info@redwoodisland.com</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+          <p>&copy; 2026 Redwood Island. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
